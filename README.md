@@ -56,7 +56,7 @@
 | selection  | Type: String <br /> Default: 'piece-selection' <br /><br /> The class of the selected element in the complete box  |
 
 
-####Data Callback(#data-callback)
+####Data Callback
 |   | Type |Destcription |
 | ------------- | ------------- | ------------- |
 | handlingData | Object | The Handling object with informations fo the word at the current and the word of the word before the piece seperator.
