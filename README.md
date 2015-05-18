@@ -44,8 +44,7 @@
 #### Settings
 | Setting  | Destcription |
 | ------------- | ------------- |
-| caseSensitive  | Type:Boolean 
-Default:false VALUES:true|false Set the completer as case sensetive or not  |
+| caseSensitive  | Type:Boolean Default:false VALUES:true|false Set the completer as case sensetive or not  |
 | completeBoxPosition  | Type: String Default:'at-word-begin' Values:at-word-begin|at-cursor Is the Value "at-word-begin" set than is the complete box position at the word beginning after a seperator. Is the "at-cursor" set than is the complet box at the position of the cursor.   |
 | data  | Content Cell  |
 | fastComplete  | Type: Boolean Default:true Values:true|false If this property true than use the piece complete a fast completion and select all time if the complet box visibile the first element to inserting whit a Enter.  |
