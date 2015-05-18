@@ -63,7 +63,7 @@
 
 #### using Data Callback
 ```Javascript
-PIECE.initialise('piece-complete3', {
+PIECE.initialise('piece-complete', {
         pieces:[' '],
         data:function(_handlingData) {
             if(_handlingData.current.value.match('^a')) {
