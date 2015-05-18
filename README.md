@@ -1,11 +1,8 @@
 # PIECE
 #### Input
 ```html
-<!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
+<head>
     <link rel="stylesheet" href="pieceComplete.css" type="text/css">
     <script type="text/javascript" language="JavaScript" src="pieceComplete.js"></script>
 </head>
@@ -22,16 +19,13 @@
 ```
 #### Textarea
 ```html
-<!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
+<head>
     <link rel="stylesheet" href="pieceComplete.css" type="text/css">
     <script type="text/javascript" language="JavaScript" src="pieceComplete.js"></script>
 </head>
 <body>
-  <input id="piece-complete" />
+  <textarea id="piece-complete" ></textarea>
   <script>
    PIECE.initialise('piece-complete', {
         pieces:[' '],
