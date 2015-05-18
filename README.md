@@ -55,4 +55,29 @@
 | pieces  | Type: Array <br /> Default: [] <br /><br /> A list where the completer seperate the words in the input field. Is the Field a Textarea than is a new line a additional seperator |
 | selection  | Type: String <br /> Default: 'piece-selection' <br /><br /> The class of the selected element in the complete box  |
 
-#data-callback
+(#data-callback)
+####Data Callback
+|   | Type |Destcription |
+| ------------- | ------------- | ------------- |
+| handlingData | Object | The Handling object with informations fo the word at the current and the word of the word before the piece seperator.
+| hide | Function(void)| Hide the complete box. |
+| show | Function(void) | Show the complete box | 
+| update | Function(Array) | Update the complet box whit the givingData |
+| wait | Function(void) | Show the complet box with a waiting icon |
+| isWait | Boolean | is this value true than is the complet box dispaly with a waiting icon, but only if the returning a empty Array|
+| return | value | the returning a arary. Has the array values than is the complet box display. |
+
+#### using Data Callback
+```Javascript
+PIECE.initialise('piece-complete3', {
+        pieces:[' '],
+        data:function(_handlingData) {
+            if(_handlingData.current.value.match('^a')) {
+                return ['apple']
+            } else if(_handlingData.current.value.match('^b'))) {
+                return ['banana']
+            }
+            
+            return [];
+        }
+```
