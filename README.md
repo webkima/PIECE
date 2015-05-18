@@ -44,14 +44,14 @@
 #### Settings
 | Setting  | Destcription |
 | ------------- | ------------- |
-| caseSensitive  | Type:Boolean <br />Default:false VALUES:true|false Set the completer as case sensetive or not  |
-| completeBoxPosition  | Type: String Default:'at-word-begin' Values:at-word-begin|at-cursor Is the Value "at-word-begin" set than is the complete box position at the word beginning after a seperator. Is the "at-cursor" set than is the complet box at the position of the cursor.   |
+| caseSensitive  | Type:Boolean <br /> Default:false <br /> Values:true,false <br /> Set the completer as case sensetive or not  |
+| completeBoxPosition  | Type: String <br /> Default:'at-word-begin' <br /> Values:at-word-begin, at-cursor <br /> Is the Value "at-word-begin" set than is the complete box position at the word beginning after a seperator. Is the "at-cursor" set than is the complet box at the position of the cursor.   |
 | data  | Content Cell  |
-| fastComplete  | Type: Boolean Default:true Values:true|false If this property true than use the piece complete a fast completion and select all time if the complet box visibile the first element to inserting whit a Enter.  |
-| fastSelection  | Type: String Default: 'piece-fast-selection' The class of the complet box where displays whitch word is selected for fast insert into the input field  |
-| hasPieceComplete  | Type: String Default: 'has-piece-complete' The class of the Field that have a piece complete  |
+| fastComplete  | Type: Boolean <br /> Default:true <br /> Values:true, false <br /> If this property true than use the piece complete a fast completion and select all time if the complet box visibile the first element to inserting whit a Enter.  |
+| fastSelection  | Type: String <br /> Default: 'piece-fast-selection' <br /> The class of the complet box where displays whitch word is selected for fast insert into the input field  |
+| hasPieceComplete  | Type: String <br /> Default: 'has-piece-complete' <br /> The class of the Field that have a piece complete  |
 | list  | Content Cell  |
-| min  | Type: Integer The minimum characters after the completer start run after a seperator.   |
-| pieces  | Type: Array \n A list where the completer seperate the words in the input field. Is the Field a Textarea than is a new line a additional seperator |
-| selection  | Type: String Default: 'piece-selection' The class of the selected element in the complete box  |
+| min  | Type: Integer <br /> Default: 1 <br /> Values: Number >= 0 <br />The minimum characters after the completer start run after a seperator.   |
+| pieces  | Type: Array <br /> Default: [] <br /> A list where the completer seperate the words in the input field. Is the Field a Textarea than is a new line a additional seperator |
+| selection  | Type: String <br /> Default: 'piece-selection' <br /> The class of the selected element in the complete box  |
 
