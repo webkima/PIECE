@@ -55,4 +55,4 @@
 | pieces  | Type: Array <br /> Default: [] <br /><br /> A list where the completer seperate the words in the input field. Is the Field a Textarea than is a new line a additional seperator |
 | selection  | Type: String <br /> Default: 'piece-selection' <br /><br /> The class of the selected element in the complete box  |
 
-(#data-callback)
+#data-callback
