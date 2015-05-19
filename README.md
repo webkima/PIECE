@@ -66,12 +66,14 @@
 PIECE.initialise('piece-complete', {
         pieces:[' '],
         data:function(_handlingData) {
-            if(_handlingData.current.value.match('^a')) {
+            if(_handlingData.before && _handlingData.before.value == 'apple') {
+                return ['ice'];
+            } else if(_handlingData.current.value.match('^a')) {
                 return ['apple']
-            } else if(_handlingData.current.value.match('^b'))) {
+            } else if(_handlingData.current.value.match('^b')) {
                 return ['banana']
             }
-            
+
             return [];
         }
 ```
