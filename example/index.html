@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/pieceComplete.css" type="text/css">
+    <script type="text/javascript" language="JavaScript" src="../js/pieceComplete.js"></script>
+</head>
+<body>
+    <label for="piece-complete">PieceComplete 1</label>
+    <input id="piece-complete" />
+    <label for="piece-complete2">PieceComplete 2</label>
+    <input id="piece-complete2" />
+    <label for="piece-complete3">PieceComplete 3</label>
+    <input id="piece-complete3" />
+    <label for="piece-complete4">PieceComplete 4</label>
+    <input id="piece-complete4" />
+    <textarea id="piece-complete5" style="width: 400px; height: 800px;"></textarea>
+<script>
+    PIECE.initialise('piece-complete', {
+        pieces:['::', '->'],
+        data:['DAS', 'IST', 'MEIN', 'HAUS'],
+        list: {
+            name: 'piece-list'
+        },
+        caseSensitive: true
+    });
+    PIECE.initialise('piece-complete2', {
+        pieces:['::', '->'],
+        data:['THIS', 'IS', 'a', 'OTHER'],
+        list:{
+            name:'piece-list',
+            container:'piece-complete'
+        },
+        caseSensitive:true,
+        fastComplete:true,
+        hasPieceComplete:'has-piece-complete',
+        selection:'piece-selection',
+        fastSelection:'piece-easy-selection'
+    });
+    PIECE.initialise('piece-complete3', {
+        pieces:['::', '->'],
+        data:function(_handlingData) {
+            if(_handlingData.before && _handlingData.before.value == 'apple') {
+                return ['ice'];
+            } else if(_handlingData.current.value.match('^a')) {
+                return ['apple']
+            } else if(_handlingData.current.value.match('^b')) {
+                return ['banana']
+            }
+
+            return [];
+        }
+    });
+    PIECE.initialise('piece-complete4', {
+        pieces:['::', '->'],
+        data:'http://localhost:8123/php/pieceComplete/example/server.php'
+    });
+    PIECE.initialise('piece-complete5', {
+        pieces:['::', '->'],
+        data:'http://localhost:8123/php/pieceComplete/example/server.php',
+        completeBoxPosition:'at-cursor'
+    });
+</script>
+</body>
+</html>
